@@ -52,6 +52,7 @@ namespace Console_Calculator
                         Console.WriteLine();
                         Console.WriteLine(FirstNumberNum / SecondNumberNum);
                     }
+                    Console.ReadLine();
                 }
             }
 
