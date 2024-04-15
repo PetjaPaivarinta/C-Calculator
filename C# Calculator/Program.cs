@@ -23,7 +23,7 @@ namespace Console_Calculator
             string FirstNumber = Console.ReadLine();
 
 
-            if (FirstNumber != null)
+            if (FirstNumber != "")
             {
                 int FirstNumberNum = Convert.ToInt32(FirstNumber);
                 Console.Write("Enter the second number: ");
@@ -31,21 +31,25 @@ namespace Console_Calculator
                 string SecondNumber = Console.ReadLine();
                 int SecondNumberNum = Convert.ToInt32(SecondNumber);
 
-                if (SecondNumber != null)
+                if (SecondNumber != "")
                 {
                     Console.WriteLine("What you wanna use to calculate?");
                     Console.WriteLine("Type + for add, - for take, * for multiply, / for divide");
+                    Console.WriteLine();
 
+                    Console.Write("Method: ");
 
                     string Method = Console.ReadLine();
                     if (Method.Length > 1)
                     {
                         ErrorTryAgain();
+                        Console.Write("Method: ");
                         Method = Console.ReadLine();
                     }
                     if (Method != "+" && Method != "-" && Method != "*" && Method != "/")
                     {
                         ErrorTryAgain();
+                        Console.Write("Method: ");
                         Method = Console.ReadLine();
                     }
 
