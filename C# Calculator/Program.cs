@@ -11,7 +11,7 @@ namespace Console_Calculator
         static void Main(string[] args)
         {
             Console.WriteLine("   ____           _                  _           _                  \r\n  / ___|   __ _  | |   ___   _   _  | |   __ _  | |_    ___    _ __ \r\n | |      / _` | | |  / __| | | | | | |  / _` | | __|  / _ \\  | '__|\r\n | |___  | (_| | | | | (__  | |_| | | | | (_| | | |_  | (_) | | |   \r\n  \\____|  \\__,_| |_|  \\___|  \\__,_| |_|  \\__,_|  \\__|  \\___/  |_|   \r\n");
-            Console.BackgroundColor = ConsoleColor.Green;
+        
             Console.Write("Enter the first number: ");
 
             string FirstNumber = Console.ReadLine();
