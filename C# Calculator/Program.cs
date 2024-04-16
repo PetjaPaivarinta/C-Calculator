@@ -23,14 +23,12 @@ namespace Console_Calculator
             int FirstNumber = Convert.ToInt32(Console.ReadLine());
 
 
-            if (FirstNumber != "")
-            {
+           
                 Console.Write("Enter the second number: ");
 
                 int SecondNumber = Convert.ToInt32(Console.ReadLine());
 
-                if (SecondNumber != "")
-                {
+                
                     Console.WriteLine("What you wanna use to calculate?");
                     Console.WriteLine("Type + for add, - for take, * for multiply, / for divide");
                     Console.WriteLine();
@@ -44,33 +42,33 @@ namespace Console_Calculator
                         Console.Write("Method: ");
                         Method = Console.ReadLine();
                     }
-                    if (Method != "+" && Method != "-" && Method != "*" && Method != "/")
-                    {
-                        ErrorTryAgain();
-                        Console.Write("Method: ");
-                        Method = Console.ReadLine();
+
+                    switch(Method)
+            {
+                        case "+":
+                            Console.WriteLine();
+                            Console.WriteLine(FirstNumber + SecondNumber);
+                            break;
+                        case "-":
+                            Console.WriteLine();
+                            Console.WriteLine(FirstNumber - SecondNumber);
+                            break;
+                        case "*":
+                            Console.WriteLine();
+                            Console.WriteLine(FirstNumber * SecondNumber);
+                            break;
+                        case "/":
+                            Console.WriteLine();
+                            Console.WriteLine(FirstNumber / SecondNumber);
+                            break;
+                        default : 
+                            ErrorTryAgain();
+                    Console.Write("Method: ");
+                    Method = Console.ReadLine();
+                    break;
                     }
 
-                    if (Method == "+")
-                    {
-                        Console.WriteLine();
-                        Console.WriteLine(FirstNumber + SecondNumber);
-                    }
-                    else if (Method == "-")
-                    {
-                        Console.WriteLine();
-                        Console.WriteLine(FirstNumber - SecondNumber);
-                    }
-                    else if (Method == "*")
-                    {
-                        Console.WriteLine();
-                        Console.WriteLine(FirstNumber * SecondNumber);
-                    }
-                    else if (Method == "/")
-                    {
-                        Console.WriteLine();
-                        Console.WriteLine(FirstNumber / SecondNumber);
-                    }
+                   
                     Console.WriteLine();
                     Console.Write("Type restart to restart the program: ");
                     string Restart = Console.ReadLine();
@@ -80,8 +78,7 @@ namespace Console_Calculator
                         Console.Clear();
                         Main(args);
                     }
-                }
-            }
+                
         }
 
     }
