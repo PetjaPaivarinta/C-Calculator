@@ -20,16 +20,14 @@ namespace Console_Calculator
 
             Console.Write("Enter the first number: ");
 
-            string FirstNumber = Console.ReadLine();
+            int FirstNumber = Convert.ToInt32(Console.ReadLine());
 
 
             if (FirstNumber != "")
             {
-                int FirstNumberNum = Convert.ToInt32(FirstNumber);
                 Console.Write("Enter the second number: ");
 
-                string SecondNumber = Console.ReadLine();
-                int SecondNumberNum = Convert.ToInt32(SecondNumber);
+                int SecondNumber = Convert.ToInt32(Console.ReadLine());
 
                 if (SecondNumber != "")
                 {
@@ -56,22 +54,22 @@ namespace Console_Calculator
                     if (Method == "+")
                     {
                         Console.WriteLine();
-                        Console.WriteLine(FirstNumberNum + SecondNumberNum);
+                        Console.WriteLine(FirstNumber + SecondNumber);
                     }
                     else if (Method == "-")
                     {
                         Console.WriteLine();
-                        Console.WriteLine(FirstNumberNum - SecondNumberNum);
+                        Console.WriteLine(FirstNumber - SecondNumber);
                     }
                     else if (Method == "*")
                     {
                         Console.WriteLine();
-                        Console.WriteLine(FirstNumberNum * SecondNumberNum);
+                        Console.WriteLine(FirstNumber * SecondNumber);
                     }
                     else if (Method == "/")
                     {
                         Console.WriteLine();
-                        Console.WriteLine(FirstNumberNum / SecondNumberNum);
+                        Console.WriteLine(FirstNumber / SecondNumber);
                     }
                     Console.WriteLine();
                     Console.Write("Type restart to restart the program: ");
