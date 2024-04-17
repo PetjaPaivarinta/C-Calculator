@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +18,7 @@ namespace Console_Calculator
         {
             Console.WriteLine("   ____           _                  _           _                  \r\n  / ___|   __ _  | |   ___   _   _  | |   __ _  | |_    ___    _ __ \r\n | |      / _` | | |  / __| | | | | | |  / _` | | __|  / _ \\  | '__|\r\n | |___  | (_| | | | | (__  | |_| | | | | (_| | | |_  | (_) | | |   \r\n  \\____|  \\__,_| |_|  \\___|  \\__,_| |_|  \\__,_|  \\__|  \\___/  |_|   \r\n");
 
-            Console.Write("Enter the first number: ");
+            Console.Write("Enter the first number, thanks: ");
 
             int FirstNumber = Convert.ToInt32(Console.ReadLine());
 
